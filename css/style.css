@@ -1,0 +1,145 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.slider .img img{
+  width: 100%;
+}
+
+.mg {
+  margin: 40px 0;
+}
+.section_header {
+
+}
+.section_title {
+text-align: center;
+display: block;
+line-height: 2;
+font-size: 30px;
+margin-bottom: 10px;
+}
+.section_line{
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 1px;
+  background-color: black;
+}
+.section_header:hover .section_line {
+  width: 200px;
+}
+
+/* category items */
+
+.category_items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 70px;
+}
+.category_item {
+  position: relative;
+  margin-bottom: 10px;
+}
+.category_items .subtitle {
+  font-weight: normal;
+  color: gray;
+  margin-top: 15px;
+}
+.category_items .icon {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(139, 139, 204);
+  padding: 13px;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visabilty 0.5s;
+}
+.category_item:hover .icon {
+  opacity: 1;
+  visibility: visible;
+}
+.category_item img{
+  width: 100%;
+}
+
+
+
+/* disscount ***********/
+.disscount {
+ 
+  padding: 10px 0;
+  margin-bottom: 20px;
+  display: flex;
+}
+.disscount_desc {
+   /* width: 700px; */ 
+  padding-top: 20px;
+  height: 215px;
+  background-color: rgb(230, 212, 212); 
+  position: relative;
+}
+.desc_top {
+  padding-left: 80px;
+  margin-bottom: 40px;
+}
+.desc_top .icon {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 60px;
+}
+.disscount .paragraph{
+  margin-left: 15px;  
+}
+.disscount .span {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.disscount .span span {
+  width: 60px;
+  height: 5px;
+  display: block;
+  background-color: rgb(182, 182, 182);
+  margin-left: 10px;
+  float: left;
+}
+
+.disscount_item .img {
+width: 200px;
+height: 200px;
+margin-left: 10px;
+position: relative;
+}
+.disscount_item .img img{
+  width: 100%;
+}
+.disscount_item .img_info {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+
